@@ -18,5 +18,11 @@ Feature: Login
     Then user logs in as sales manager
     And user verifies that "Dashboard" subtitle is displayed
 
+    Scenario: Verify that warning message is displayed when pasword is not correct
+      Given user is on the login page
+      Then user enters "storemanager85" username and "wrong" password
+      And user verifies that "Invalid user name or password." massage is displayed
+
+
 
 

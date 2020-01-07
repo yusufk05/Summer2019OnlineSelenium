@@ -28,4 +28,14 @@ public class LoginStepDefinitions {
     public void user_logs_in_as_sales_manager() {
         System.out.println("Login as sales manager");
     }
+
+    @Then("user enters {string} username and {string} password")
+    public void user_enters_username_and_password(String string, String string2) {
+        System.out.println("Login with "+string+" username and "+string2+" password.");
+    }
+
+    @Then("user verifies that {string} massage is displayed")
+    public void user_verifies_that_massage_is_displayed(String string) {
+        System.out.println("Verifed that warning massage is displayed "+ string);
+    }
 }

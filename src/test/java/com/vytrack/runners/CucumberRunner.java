@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",   // path to feature
         glue = "com/vytrack/step_definitions",       // path to definitions
-        dryRun = true  // by default
+        dryRun = false  // by default
 )
 public class CucumberRunner {
 

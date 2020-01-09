@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",   // path to feature
         glue = "com/vytrack/step_definitions",       // path to definitions
         dryRun = false,  // by default
-        tags = "",
+        tags = "@smoke_test",
         plugin = {"html:target/default-cucumber-report"}
 )
 public class CucumberRunner {
